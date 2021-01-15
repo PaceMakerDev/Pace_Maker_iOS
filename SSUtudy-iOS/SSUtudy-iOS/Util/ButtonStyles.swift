@@ -1,6 +1,6 @@
 //
-//  CustomButtonStyles.swift
-//  SSUtudy
+//  ButtonStyles.swift
+//  SSUtudy-iOS
 //
 //  Created by 허예은 on 2021/01/15.
 //
@@ -11,14 +11,13 @@ struct CustomButtonStyles: View {
     var body: some View {
         VStack {
             
-        
             Button(action: {
                 print("Button action")
             }) {
                 HStack {
                     Text("로그인")
                 }
-            }.buttonStyle(CustomButtonStyle()).frame(width: UIScreen.main.bounds.width, height: 63)
+            }.buttonStyle(PrimaryButtonStyle()).frame(width: UIScreen.main.bounds.width, height: 63)
             
             Button(action: {
                 print("Button action")
@@ -26,7 +25,7 @@ struct CustomButtonStyles: View {
                 HStack {
                     Text("회원가입")
                 }
-            }.buttonStyle(CustomBorderButtonStyle()).frame(width: UIScreen.main.bounds.width, height: 63)
+            }.buttonStyle(PrimaryOutlineButtonStyle()).frame(width: UIScreen.main.bounds.width, height: 63)
         }
     }
 }
@@ -37,7 +36,7 @@ struct CustomButtonStyles_Previews: PreviewProvider {
     }
 }
 
-struct CustomButtonStyle: ButtonStyle {
+struct PrimaryButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .foregroundColor(Color.white)
@@ -46,10 +45,11 @@ struct CustomButtonStyle: ButtonStyle {
             .background(Color(red: 14/255, green: 190/255, blue: 175/255))
             .cornerRadius(40.0)
             .padding(.horizontal, 47)
+        
     }
 }
 
-struct CustomBorderButtonStyle: ButtonStyle {
+struct PrimaryOutlineButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)
@@ -61,3 +61,4 @@ struct CustomBorderButtonStyle: ButtonStyle {
             .padding(.horizontal, 47)
     }
 }
+

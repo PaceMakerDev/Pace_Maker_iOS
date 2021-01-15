@@ -1,14 +1,14 @@
 //
-//  SSUtudyTests.swift
-//  SSUtudyTests
+//  SSUtudy_iOSTests.swift
+//  SSUtudy-iOSTests
 //
 //  Created by 허예은 on 2021/01/15.
 //
 
 import XCTest
-@testable import SSUtudy
+@testable import SSUtudy_iOS
 
-class SSUtudyTests: XCTestCase {
+class SSUtudy_iOSTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
