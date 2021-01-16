@@ -8,9 +8,31 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var selection: Int? = nil
+    
+    init(){
+        UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().tintColor = UIColor(red: 142/255, green: 142/255, blue: 147/255, alpha: 1)    }
+    
     var body: some View {
         NavigationView {
             VStack {
+                NavigationLink(
+                    destination: LoginView(),
+                    tag: 1,
+                    selection: self.$selection){
+                    Text("")
+                }.navigationTitle(Text(""))
+                
+                NavigationLink(
+                    destination: RegisterView(),
+                    tag: 2,
+                    selection: self.$selection){
+                    Text("")
+                }.navigationTitle(Text(""))
+                
+                .navigationBarHidden(true)
+                
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -20,7 +42,8 @@ struct HomeView: View {
                 
                 HStack {
                     Button(action: {
-                        print("Login View")
+                        self.selection = 1
+
                     }) {
                         HStack {
                             Text("로그인")
@@ -31,7 +54,7 @@ struct HomeView: View {
                 
                 HStack {
                     Button(action: {
-                        print("Login View")
+                        self.selection = 2
                     }) {
                         HStack {
                             Text("회원가입")
@@ -45,7 +68,7 @@ struct HomeView: View {
                         print("Missing ID or Password")
                     }) {
                         HStack {
-                            Text("아이디 혹은 비밀번호를 잊으셨나요?").font(.system(size:15, weight: .light)).foregroundColor(Color(red: 142/255, green: 142/255, blue: 147/255))
+                            Text("아이디 혹은 비밀번호를 잊으셨나요?").font(.system(size:15, weight: .light)).foregroundColor(Colors.secondary)
                         }
                     }
                 }

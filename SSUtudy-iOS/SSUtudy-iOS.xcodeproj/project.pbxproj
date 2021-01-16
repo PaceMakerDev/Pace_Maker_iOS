@@ -15,6 +15,11 @@
 		961FE36E25B18CA300C52316 /* SSUtudy_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FE36D25B18CA300C52316 /* SSUtudy_iOSUITests.swift */; };
 		961FE38325B18DD300C52316 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FE38225B18DD300C52316 /* ButtonStyles.swift */; };
 		961FE38825B190BF00C52316 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FE38725B190BF00C52316 /* LoginView.swift */; };
+		961FE39525B195C100C52316 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FE39425B195C100C52316 /* RegisterView.swift */; };
+		961FE3A225B2887B00C52316 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FE3A125B2887B00C52316 /* MainView.swift */; };
+		961FE3AF25B28E3700C52316 /* StudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FE3AE25B28E3700C52316 /* StudyView.swift */; };
+		961FE3B425B28E3F00C52316 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FE3B325B28E3F00C52316 /* SettingView.swift */; };
+		961FE3B925B2924800C52316 /* ColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FE3B825B2924800C52316 /* ColorStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		961FE36F25B18CA300C52316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		961FE38225B18DD300C52316 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		961FE38725B190BF00C52316 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		961FE39425B195C100C52316 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		961FE3A125B2887B00C52316 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		961FE3AE25B28E3700C52316 /* StudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyView.swift; sourceTree = "<group>"; };
+		961FE3B325B28E3F00C52316 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		961FE3B825B2924800C52316 /* ColorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				961FE35025B18C9800C52316 /* SSUtudy_iOSApp.swift */,
-				961FE38C25B190C400C52316 /* View */,
+				961FE35225B18C9800C52316 /* HomeView.swift */,
+				961FE39425B195C100C52316 /* RegisterView.swift */,
+				961FE38725B190BF00C52316 /* LoginView.swift */,
+				961FE3AE25B28E3700C52316 /* StudyView.swift */,
+				961FE3B325B28E3F00C52316 /* SettingView.swift */,
+				961FE3A125B2887B00C52316 /* MainView.swift */,
 				961FE38125B18DC300C52316 /* Util */,
 				961FE35425B18CA200C52316 /* Assets.xcassets */,
 				961FE35925B18CA200C52316 /* Info.plist */,
@@ -139,25 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				961FE38225B18DD300C52316 /* ButtonStyles.swift */,
+				961FE3B825B2924800C52316 /* ColorStyle.swift */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		961FE38C25B190C400C52316 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				961FE35225B18C9800C52316 /* HomeView.swift */,
-				961FE38D25B190D000C52316 /* Auth */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		961FE38D25B190D000C52316 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				961FE38725B190BF00C52316 /* LoginView.swift */,
-			);
-			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961FE3B925B2924800C52316 /* ColorStyle.swift in Sources */,
+				961FE3AF25B28E3700C52316 /* StudyView.swift in Sources */,
 				961FE35325B18C9800C52316 /* HomeView.swift in Sources */,
+				961FE3A225B2887B00C52316 /* MainView.swift in Sources */,
+				961FE39525B195C100C52316 /* RegisterView.swift in Sources */,
 				961FE38325B18DD300C52316 /* ButtonStyles.swift in Sources */,
+				961FE3B425B28E3F00C52316 /* SettingView.swift in Sources */,
 				961FE38825B190BF00C52316 /* LoginView.swift in Sources */,
 				961FE35125B18C9800C52316 /* SSUtudy_iOSApp.swift in Sources */,
 			);

@@ -42,7 +42,7 @@ struct PrimaryButtonStyle: ButtonStyle {
             .foregroundColor(Color.white)
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding()
-            .background(Color(red: 14/255, green: 190/255, blue: 175/255))
+            .background(Colors.primary)
             .cornerRadius(40.0)
             .padding(.horizontal, 47)
         
@@ -54,9 +54,9 @@ struct PrimaryOutlineButtonStyle: ButtonStyle {
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding()
-            .foregroundColor(Color(red: 14/255, green: 190/255, blue: 175/255))
+            .foregroundColor(Colors.primary)
             .overlay(
-                RoundedRectangle(cornerRadius: 40) .stroke(Color(red: 14/255, green: 190/255, blue: 175/255), lineWidth: 3)
+                RoundedRectangle(cornerRadius: 40) .stroke(Colors.primary, lineWidth: 1)
             )
             .padding(.horizontal, 47)
     }
