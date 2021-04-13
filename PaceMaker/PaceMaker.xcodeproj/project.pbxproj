@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C4F1366DCBA0E15C232DABA /* Pods_PaceMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C693AC644D521D7B64F1D534 /* Pods_PaceMakerTests.framework */; };
+		4C9A7686793A02F9E6E3CCF3 /* Pods_PaceMaker_PaceMakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F40C0B78010779486C4141A /* Pods_PaceMaker_PaceMakerUITests.framework */; };
+		964D2D62261DB02800877B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D2D61261DB02800877B10 /* AppDelegate.swift */; };
+		964D2D64261DB02800877B10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D2D63261DB02800877B10 /* SceneDelegate.swift */; };
+		964D2D66261DB02800877B10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D2D65261DB02800877B10 /* LoginViewController.swift */; };
+		964D2D69261DB02800877B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964D2D67261DB02800877B10 /* Main.storyboard */; };
+		964D2D6B261DB02900877B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964D2D6A261DB02900877B10 /* Assets.xcassets */; };
+		964D2D6E261DB02900877B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964D2D6C261DB02900877B10 /* LaunchScreen.storyboard */; };
+		96DD5DF526258D40006459FB /* BaseHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD5DF426258D40006459FB /* BaseHTTPClient.swift */; };
+		96DD5E2926258F9E006459FB /* URLConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD5E2826258F9E006459FB /* URLConsts.swift */; };
+		96DD5E3126258FE5006459FB /* LogConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD5E3026258FE5006459FB /* LogConfig.swift */; };
+		CB8916BD2E9003D728019D49 /* Pods_PaceMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FA813CFD51B0061D1069AB /* Pods_PaceMaker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		964D2D75261DB02900877B10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 964D2D56261DB02800877B10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 964D2D5D261DB02800877B10;
+			remoteInfo = PaceMaker;
+		};
+		964D2D80261DB02900877B10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 964D2D56261DB02800877B10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 964D2D5D261DB02800877B10;
+			remoteInfo = PaceMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FA8E49E60BD0ED2B17ED0EF /* Pods-PaceMaker-PaceMakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaceMaker-PaceMakerUITests.debug.xcconfig"; path = "Target Support Files/Pods-PaceMaker-PaceMakerUITests/Pods-PaceMaker-PaceMakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CEE3E4FCFA655ADB1BBE683 /* Pods-PaceMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaceMaker.release.xcconfig"; path = "Target Support Files/Pods-PaceMaker/Pods-PaceMaker.release.xcconfig"; sourceTree = "<group>"; };
+		1F40C0B78010779486C4141A /* Pods_PaceMaker_PaceMakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaceMaker_PaceMakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D46A87CF3E18F880A9CE2C4 /* Pods-PaceMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaceMakerTests.release.xcconfig"; path = "Target Support Files/Pods-PaceMakerTests/Pods-PaceMakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7314FE180DFC0DD677074690 /* Pods-PaceMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaceMakerTests.debug.xcconfig"; path = "Target Support Files/Pods-PaceMakerTests/Pods-PaceMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		964D2D5E261DB02800877B10 /* PaceMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaceMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		964D2D61261DB02800877B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		964D2D63261DB02800877B10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		964D2D65261DB02800877B10 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		964D2D68261DB02800877B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		964D2D6A261DB02900877B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		964D2D6D261DB02900877B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		964D2D6F261DB02900877B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964D2D74261DB02900877B10 /* PaceMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaceMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		964D2D7F261DB02900877B10 /* PaceMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaceMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96DD5DF426258D40006459FB /* BaseHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHTTPClient.swift; sourceTree = "<group>"; };
+		96DD5E2826258F9E006459FB /* URLConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConsts.swift; sourceTree = "<group>"; };
+		96DD5E3026258FE5006459FB /* LogConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogConfig.swift; sourceTree = "<group>"; };
+		A5FA813CFD51B0061D1069AB /* Pods_PaceMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaceMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE44C0342B432CFF76CF5284 /* Pods-PaceMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaceMaker.debug.xcconfig"; path = "Target Support Files/Pods-PaceMaker/Pods-PaceMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		C693AC644D521D7B64F1D534 /* Pods_PaceMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaceMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C78D1510398C02E8BFC13913 /* Pods-PaceMaker-PaceMakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaceMaker-PaceMakerUITests.release.xcconfig"; path = "Target Support Files/Pods-PaceMaker-PaceMakerUITests/Pods-PaceMaker-PaceMakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		964D2D5B261DB02800877B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8916BD2E9003D728019D49 /* Pods_PaceMaker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		964D2D71261DB02900877B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4F1366DCBA0E15C232DABA /* Pods_PaceMakerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		964D2D7C261DB02900877B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9A7686793A02F9E6E3CCF3 /* Pods_PaceMaker_PaceMakerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		964D2D55261DB02800877B10 = {
+			isa = PBXGroup;
+			children = (
+				964D2D60261DB02800877B10 /* PaceMaker */,
+				964D2D6A261DB02900877B10 /* Assets.xcassets */,
+				964D2D5F261DB02800877B10 /* Products */,
+				F8BA451BB08F577B3810C8DD /* Pods */,
+				BF8154CD1DA5360E905DF25D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		964D2D5F261DB02800877B10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				964D2D5E261DB02800877B10 /* PaceMaker.app */,
+				964D2D74261DB02900877B10 /* PaceMakerTests.xctest */,
+				964D2D7F261DB02900877B10 /* PaceMakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		964D2D60261DB02800877B10 /* PaceMaker */ = {
+			isa = PBXGroup;
+			children = (
+				964D2D61261DB02800877B10 /* AppDelegate.swift */,
+				964D2D63261DB02800877B10 /* SceneDelegate.swift */,
+				964D2D6F261DB02900877B10 /* Info.plist */,
+				96DD5DE726258C7C006459FB /* API */,
+				96DD5DE826258C85006459FB /* Extension */,
+				96DD5DE526258C63006459FB /* Features */,
+				96DD5DE926258C8A006459FB /* Fonts */,
+				96DD5DEA26258C91006459FB /* Storyboard */,
+				96DD5DEB26258C9F006459FB /* Util */,
+				96DD5DE626258C76006459FB /* ViewModel */,
+			);
+			path = PaceMaker;
+			sourceTree = "<group>";
+		};
+		96DD5DE526258C63006459FB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				96DD5DF026258CE3006459FB /* Auth */,
+				96DD5DEF26258CDE006459FB /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		96DD5DE626258C76006459FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96DD5DE726258C7C006459FB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				96DD5DF426258D40006459FB /* BaseHTTPClient.swift */,
+				96DD5DEE26258CCD006459FB /* UseCase */,
+				96DD5DEC26258CBF006459FB /* Service */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		96DD5DE826258C85006459FB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		96DD5DE926258C8A006459FB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		96DD5DEA26258C91006459FB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				964D2D6C261DB02900877B10 /* LaunchScreen.storyboard */,
+				964D2D67261DB02800877B10 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		96DD5DEB26258C9F006459FB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				96DD5E2826258F9E006459FB /* URLConsts.swift */,
+				96DD5E3026258FE5006459FB /* LogConfig.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		96DD5DEC26258CBF006459FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		96DD5DEE26258CCD006459FB /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		96DD5DEF26258CDE006459FB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		96DD5DF026258CE3006459FB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				964D2D65261DB02800877B10 /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		BF8154CD1DA5360E905DF25D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5FA813CFD51B0061D1069AB /* Pods_PaceMaker.framework */,
+				1F40C0B78010779486C4141A /* Pods_PaceMaker_PaceMakerUITests.framework */,
+				C693AC644D521D7B64F1D534 /* Pods_PaceMakerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8BA451BB08F577B3810C8DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE44C0342B432CFF76CF5284 /* Pods-PaceMaker.debug.xcconfig */,
+				1CEE3E4FCFA655ADB1BBE683 /* Pods-PaceMaker.release.xcconfig */,
+				0FA8E49E60BD0ED2B17ED0EF /* Pods-PaceMaker-PaceMakerUITests.debug.xcconfig */,
+				C78D1510398C02E8BFC13913 /* Pods-PaceMaker-PaceMakerUITests.release.xcconfig */,
+				7314FE180DFC0DD677074690 /* Pods-PaceMakerTests.debug.xcconfig */,
+				6D46A87CF3E18F880A9CE2C4 /* Pods-PaceMakerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		964D2D5D261DB02800877B10 /* PaceMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964D2D88261DB02900877B10 /* Build configuration list for PBXNativeTarget "PaceMaker" */;
+			buildPhases = (
+				273F0055C2B360CD9502B5E9 /* [CP] Check Pods Manifest.lock */,
+				964D2D5A261DB02800877B10 /* Sources */,
+				964D2D5B261DB02800877B10 /* Frameworks */,
+				964D2D5C261DB02800877B10 /* Resources */,
+				E2F5A644574982814B804EF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaceMaker;
+			productName = PaceMaker;
+			productReference = 964D2D5E261DB02800877B10 /* PaceMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		964D2D73261DB02900877B10 /* PaceMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964D2D8B261DB02900877B10 /* Build configuration list for PBXNativeTarget "PaceMakerTests" */;
+			buildPhases = (
+				46F3C46CFE2EF342544F4E74 /* [CP] Check Pods Manifest.lock */,
+				964D2D70261DB02900877B10 /* Sources */,
+				964D2D71261DB02900877B10 /* Frameworks */,
+				964D2D72261DB02900877B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				964D2D76261DB02900877B10 /* PBXTargetDependency */,
+			);
+			name = PaceMakerTests;
+			productName = PaceMakerTests;
+			productReference = 964D2D74261DB02900877B10 /* PaceMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		964D2D7E261DB02900877B10 /* PaceMakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964D2D8E261DB02900877B10 /* Build configuration list for PBXNativeTarget "PaceMakerUITests" */;
+			buildPhases = (
+				7B314DA504F16136F6F775ED /* [CP] Check Pods Manifest.lock */,
+				964D2D7B261DB02900877B10 /* Sources */,
+				964D2D7C261DB02900877B10 /* Frameworks */,
+				964D2D7D261DB02900877B10 /* Resources */,
+				9F3CAE7ADD8E7551EE87D2F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				964D2D81261DB02900877B10 /* PBXTargetDependency */,
+			);
+			name = PaceMakerUITests;
+			productName = PaceMakerUITests;
+			productReference = 964D2D7F261DB02900877B10 /* PaceMakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		964D2D56261DB02800877B10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					964D2D5D261DB02800877B10 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					964D2D73261DB02900877B10 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 964D2D5D261DB02800877B10;
+					};
+					964D2D7E261DB02900877B10 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 964D2D5D261DB02800877B10;
+					};
+				};
+			};
+			buildConfigurationList = 964D2D59261DB02800877B10 /* Build configuration list for PBXProject "PaceMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 964D2D55261DB02800877B10;
+			productRefGroup = 964D2D5F261DB02800877B10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				964D2D5D261DB02800877B10 /* PaceMaker */,
+				964D2D73261DB02900877B10 /* PaceMakerTests */,
+				964D2D7E261DB02900877B10 /* PaceMakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		964D2D5C261DB02800877B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964D2D6E261DB02900877B10 /* LaunchScreen.storyboard in Resources */,
+				964D2D6B261DB02900877B10 /* Assets.xcassets in Resources */,
+				964D2D69261DB02800877B10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		964D2D72261DB02900877B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		964D2D7D261DB02900877B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		273F0055C2B360CD9502B5E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaceMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46F3C46CFE2EF342544F4E74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaceMakerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B314DA504F16136F6F775ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaceMaker-PaceMakerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3CAE7ADD8E7551EE87D2F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaceMaker-PaceMakerUITests/Pods-PaceMaker-PaceMakerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaceMaker-PaceMakerUITests/Pods-PaceMaker-PaceMakerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaceMaker-PaceMakerUITests/Pods-PaceMaker-PaceMakerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F5A644574982814B804EF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaceMaker/Pods-PaceMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaceMaker/Pods-PaceMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaceMaker/Pods-PaceMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		964D2D5A261DB02800877B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DD5E3126258FE5006459FB /* LogConfig.swift in Sources */,
+				964D2D66261DB02800877B10 /* LoginViewController.swift in Sources */,
+				96DD5DF526258D40006459FB /* BaseHTTPClient.swift in Sources */,
+				964D2D62261DB02800877B10 /* AppDelegate.swift in Sources */,
+				96DD5E2926258F9E006459FB /* URLConsts.swift in Sources */,
+				964D2D64261DB02800877B10 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		964D2D70261DB02900877B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		964D2D7B261DB02900877B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		964D2D76261DB02900877B10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 964D2D5D261DB02800877B10 /* PaceMaker */;
+			targetProxy = 964D2D75261DB02900877B10 /* PBXContainerItemProxy */;
+		};
+		964D2D81261DB02900877B10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 964D2D5D261DB02800877B10 /* PaceMaker */;
+			targetProxy = 964D2D80261DB02900877B10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		964D2D67261DB02800877B10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964D2D68261DB02800877B10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		964D2D6C261DB02900877B10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964D2D6D261DB02900877B10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		964D2D86261DB02900877B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		964D2D87261DB02900877B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		964D2D89261DB02900877B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE44C0342B432CFF76CF5284 /* Pods-PaceMaker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CY8UX9N2S;
+				INFOPLIST_FILE = PaceMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yeahsilver.PaceMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		964D2D8A261DB02900877B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CEE3E4FCFA655ADB1BBE683 /* Pods-PaceMaker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CY8UX9N2S;
+				INFOPLIST_FILE = PaceMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yeahsilver.PaceMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		964D2D8C261DB02900877B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7314FE180DFC0DD677074690 /* Pods-PaceMakerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CY8UX9N2S;
+				INFOPLIST_FILE = PaceMakerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yeahsilver.PaceMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaceMaker.app/PaceMaker";
+			};
+			name = Debug;
+		};
+		964D2D8D261DB02900877B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D46A87CF3E18F880A9CE2C4 /* Pods-PaceMakerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CY8UX9N2S;
+				INFOPLIST_FILE = PaceMakerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yeahsilver.PaceMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaceMaker.app/PaceMaker";
+			};
+			name = Release;
+		};
+		964D2D8F261DB02900877B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA8E49E60BD0ED2B17ED0EF /* Pods-PaceMaker-PaceMakerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CY8UX9N2S;
+				INFOPLIST_FILE = PaceMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yeahsilver.PaceMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaceMaker;
+			};
+			name = Debug;
+		};
+		964D2D90261DB02900877B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78D1510398C02E8BFC13913 /* Pods-PaceMaker-PaceMakerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CY8UX9N2S;
+				INFOPLIST_FILE = PaceMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yeahsilver.PaceMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaceMaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		964D2D59261DB02800877B10 /* Build configuration list for PBXProject "PaceMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964D2D86261DB02900877B10 /* Debug */,
+				964D2D87261DB02900877B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		964D2D88261DB02900877B10 /* Build configuration list for PBXNativeTarget "PaceMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964D2D89261DB02900877B10 /* Debug */,
+				964D2D8A261DB02900877B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		964D2D8B261DB02900877B10 /* Build configuration list for PBXNativeTarget "PaceMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964D2D8C261DB02900877B10 /* Debug */,
+				964D2D8D261DB02900877B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		964D2D8E261DB02900877B10 /* Build configuration list for PBXNativeTarget "PaceMakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964D2D8F261DB02900877B10 /* Debug */,
+				964D2D90261DB02900877B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 964D2D56261DB02800877B10 /* Project object */;
+}

@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PaceMaker' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PaceMaker
+	pod 'PromisesSwift'
+	pod 'Alamofire'
+	pod 'RxAlamofire'
+	pod 'AlamofireSwiftyJSON'
+	pod 'SwiftyJSON'
+	pod 'AlamofireObjectMapper'
+	pod 'ObjectMapper'
+	pod 'RxSwift'
+	pod 'RxCocoa'
+	pod 'lottie-ios'
+	pod 'Tabman', '~> 2.9'
+	pod 'Firebase/Core'
+	pod 'Firebase/Storage'
+	pod 'Firebase/Analytics'
+	pod 'Kingfisher', '~> 6.0'
+	pod 'NVActivityIndicatorView'
+	pod 'Firebase/Messaging'
+	
+
+  target 'PaceMakerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PaceMakerUITests' do
+    # Pods for testing
+  end
+
+end
