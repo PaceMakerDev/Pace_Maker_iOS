@@ -14,21 +14,49 @@
         </array>
     </customFonts>
     <scenes>
-        <!--스터디룸 찾기-->
+        <!--스터디 리그-->
         <scene sceneID="tTS-EC-Kwk">
             <objects>
                 <viewController id="FXn-0c-ox0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xhk-w0-H6M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1719"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zot-gb-Vxx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1592"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnc-Xe-YLG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1592"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cnc-Xe-YLG" firstAttribute="bottom" secondItem="Odu-Za-wUC" secondAttribute="bottom" constant="1592" id="2X3-3x-FM2"/>
+                                    <constraint firstItem="cnc-Xe-YLG" firstAttribute="trailing" secondItem="Odu-Za-wUC" secondAttribute="trailing" constant="414" id="3oD-MW-khx"/>
+                                    <constraint firstItem="cnc-Xe-YLG" firstAttribute="leading" secondItem="Odu-Za-wUC" secondAttribute="leading" id="3vD-OF-wTd"/>
+                                    <constraint firstItem="cnc-Xe-YLG" firstAttribute="height" secondItem="vVe-02-r2p" secondAttribute="height" id="5pD-Ol-q9I"/>
+                                    <constraint firstItem="cnc-Xe-YLG" firstAttribute="width" secondItem="vVe-02-r2p" secondAttribute="width" id="ujC-TT-nKQ"/>
+                                    <constraint firstItem="cnc-Xe-YLG" firstAttribute="top" secondItem="Odu-Za-wUC" secondAttribute="top" id="wPr-qQ-8Jy"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Odu-Za-wUC"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vVe-02-r2p"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="H9F-nQ-JRA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zot-gb-Vxx" firstAttribute="bottom" secondItem="H9F-nQ-JRA" secondAttribute="bottom" id="8Vq-M9-HPS"/>
+                            <constraint firstItem="Zot-gb-Vxx" firstAttribute="trailing" secondItem="H9F-nQ-JRA" secondAttribute="trailing" id="KKw-HR-bFe"/>
+                            <constraint firstItem="Zot-gb-Vxx" firstAttribute="leading" secondItem="H9F-nQ-JRA" secondAttribute="leading" id="Lj6-g5-or3"/>
+                            <constraint firstItem="Zot-gb-Vxx" firstAttribute="top" secondItem="H9F-nQ-JRA" secondAttribute="top" id="gO1-KW-k6a"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="스터디룸 찾기" id="Kbi-y9-Aud"/>
+                    <tabBarItem key="tabBarItem" title="스터디 리그" id="Kbi-y9-Aud"/>
+                    <size key="freeformSize" width="414" height="1719"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dp5-0y-3LN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="881"/>
+            <point key="canvasLocation" x="-472.46376811594206" y="884.93303571428567"/>
         </scene>
         <!--나의스터디-->
         <scene sceneID="NLZ-TX-I61">
@@ -86,9 +114,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nc7-c4-ml6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471.01449275362324" y="185.49107142857142"/>
+            <point key="canvasLocation" x="-471" y="-826"/>
         </scene>
-        <!--스터디 리그-->
+        <!--스터디룸 찾기-->
         <scene sceneID="aRl-DI-7ZP">
             <objects>
                 <viewController id="97G-Jq-buM" sceneMemberID="viewController">
@@ -98,11 +126,11 @@
                         <viewLayoutGuide key="safeArea" id="vN1-bB-JHI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="스터디 리그" id="yU8-Oc-MWY"/>
+                    <tabBarItem key="tabBarItem" title="스터디룸 찾기" id="yU8-Oc-MWY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lb3-H6-t1n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="1556"/>
+            <point key="canvasLocation" x="-465" y="-106"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="H7f-9X-mFW">
@@ -118,12 +146,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLy-hk-w8r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-464" y="2239"/>
+            <point key="canvasLocation" x="-465" y="1886"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wFw-4p-PnB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RjJ-rf-nXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="evG-vq-8Rj" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9WH-wl-xN9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -134,11 +161,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="cKV-s4-Awl" kind="relationship" relationship="viewControllers" id="Pwu-fw-nWF"/>
-                        <segue destination="FXn-0c-ox0" kind="relationship" relationship="viewControllers" id="r7M-B4-V9R"/>
-                        <segue destination="97G-Jq-buM" kind="relationship" relationship="viewControllers" id="qTk-FX-q5G"/>
-                        <segue destination="Tev-ZH-ooV" kind="relationship" relationship="viewControllers" id="hXy-wg-VEK"/>
+                        <segue destination="97G-Jq-buM" kind="relationship" relationship="viewControllers" id="hGf-UC-YoZ"/>
+                        <segue destination="FXn-0c-ox0" kind="relationship" relationship="viewControllers" id="IPM-WO-GTZ"/>
+                        <segue destination="Tev-ZH-ooV" kind="relationship" relationship="viewControllers" id="Y5I-w1-fh6"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RjJ-rf-nXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1428" y="1011"/>
         </scene>
